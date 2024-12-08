@@ -13,7 +13,9 @@ body{
   flex-direction: column;
   width:300px;
   justify-content: center;
-  
+  background-color: rgba(255,255,255,0.5);
+  padding:30px;
+  border-radius:10px;
 }
 
 .todo-title{
@@ -29,11 +31,12 @@ body{
   height:max-content;
 }
 .todo-list{
-  width:250px;
+
   display:flex;
   align-items: center;
   justify-content: space-around;
-
+  padding:10px;
+  border-bottom: 1px solid grey;
 }
 
 .pen{
@@ -72,9 +75,10 @@ body{
 }
 .task-text{
   display: inline-block;
-  color:pink;
+  color: brown;
   font-size: 18px;
-  
+  margin:0px;
+  text-align: start;
 }
 .check-box{
   width:20px;
@@ -86,4 +90,20 @@ body{
   border: none;
   padding: 0;
   cursor: pointer;
+  align-items: center;
+}
+
+.r{
+  padding:10px;
+}
+
+.alignB{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon{
+  width:35px;
+  height:35px;
+  border-radius: 15px;
 }

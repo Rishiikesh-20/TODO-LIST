@@ -13,7 +13,7 @@ const db=new pg.Client({
 db.connect();
 
 async function getTasks(){
-  let response=await db.query('select * from todo');
+  let response=await db.query('select * from todo order by id');
   return response.rows;
 }
 
